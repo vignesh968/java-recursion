@@ -1,0 +1,22 @@
+import java.util.*;
+public class Main
+{
+  public static void main(String[]args)
+  {
+    Scanner s=new Scanner(System.in);
+    int  a=s.nextInt();
+    System.out.print(dec(a));
+  }
+  static int dec(int a)
+  {
+    if(a==0)
+    {
+      return 0;
+    }
+    else
+    {
+      return a%2+10*dec(a/2);
+    }
+  }
+  
+}
