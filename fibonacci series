@@ -1,0 +1,27 @@
+import java.util.*;  
+class Main{
+    public static void main(String ...a){
+    int i=0,temp=0;
+    Scanner sc= new Scanner(System.in);
+    System.out.print("Enter number- ");  
+    int n= sc.nextInt(); 
+    int b=1;
+    for(i=0;i<n;i++){
+    System.out.print(fib(i)+" ");	
+
+    }
+    }
+    public static int fib(int i)
+    {
+        if(i==0)
+        {
+            return 0;
+        }
+        else if(i==1){
+            return 1;
+        }
+        else{
+            return fib(i-1)+fib(i-2);
+        }
+    }
+}
